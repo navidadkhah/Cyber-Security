@@ -51,8 +51,17 @@ The program will output the sent and received timing information along with the 
 
 
 # Feistel Algorithm
-This is a Feistel algorithm but it is not a classic one, it contains some changes.
-The main process of the algorithm in one round is as below:
+This is a Feistel algorithm but it is not a classic one, it contains some changes. The main process of the algorithm in one round is as below:
+
+The diagram illustrates the structure of the Feistel cipher, highlighting its key components:
+
+1. **Block Division**: The input data is divided into two halves, referred to as the left and right blocks. This separation is crucial for the algorithm's operation.
+
+2. **Round Functionality**: Each round of the Feistel cipher involves processing one half of the data using a transformation function, known as the F function. This function operates on the right half, combining it with a sub-key derived from the main key.
+
+3. **Key Scheduling**: Sub-keys are generated for each round, emphasizing the dynamic aspect of the encryption process. The relationship between the main key and the sub-keys is critical for the cipher's security.
+
+4. **Iterations**: The encryption process is repeated for multiple rounds, enhancing security through complex data transformations and non-linear operations.
 
 <p align="center">
   <img src="https://github.com/nawidadkhah/feistelAlgorithm/assets/79360286/8fb158ee-63a1-4964-aad7-867ad0292289">
